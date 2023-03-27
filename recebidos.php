@@ -9,25 +9,17 @@
     <title>cadastro</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <form action="recebidos.php" method= "get">
-        <div class="mb-3"></div>
-        <input type="text" placeholder="Nome:" name="nome">
-        <br>
-        <div class="mb-3"></div>
-        <input type="text" placeholder="Endereço:" name="endereco">
-        <br>
-        <div class="mb-3"></div>
-        <input type="text" placeholder="Estado:" name="estado">
-        <br>
-        <div class="mb-3"></div>
-        <input type="text" placeholder="Cidade: "name="cidade">
-        <br>
-        <div class="mb-3"></div>
-        <input type="text" placeholder="País:" name="pais">
-        <br>
-        <button type="submit" class="btn btn-success">Enviar</button>
-    </form>
+    <div class="container">
+        <form action="cadastro_cliente.php" method="get">
+            <h1>Recebidos</h1>
+            <p>Nome: <?php echo $_GET["nome"];?></p>
+            <p>Endereço:<?php echo $_GET["endereco"];?></p>
+            <p>Estado:<?php echo $_GET["estado"];?></p>
+            <p>Cidade:<?php echo $_GET["cidade"];?></p>
+            <p>País:<?php echo $_GET["pais"];?></p>
+            <button type="submit" class="btn btn-danger">Voltar</button>
+        </form>
+    </div>
 </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </html>
